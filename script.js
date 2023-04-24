@@ -23,7 +23,6 @@ function renderCities() {
       listCity.setAttribute("class", "past btn btn-secondary w-100 mb-1");
       listCity.setAttribute("id", "previous-cities");
 
-      //TODO:  add event listerner to buttons to search when clicked. call API
     });
   }
   console.log(pastCities);
