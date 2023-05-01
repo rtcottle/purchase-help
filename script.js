@@ -2,17 +2,16 @@ var lastPurchaseOptions = [];
 
 const rowButton = document.getElementById('new-row');
 
-const columns = 6;
-
 function addRow() {
   console.log('you clicked the button!!');
   const newRow = document.createElement('tr');
   const lastRow = document.getElementById('last');
+  // TODO: should this be append of append child?
   lastRow.append(newRow);
   document.getElementById('last').classList.remove('last');
   newRow.id = 'last';
-  function row(columns) {
-    for (var i = 0; i <= columns; i++) {
+  function row() {
+    for (var i = 0; i <= 6; i++) {
       var x = "<input placeholder='score'/>";
       var cell = document.createElement('td');
       cell.innerHTML = x;
