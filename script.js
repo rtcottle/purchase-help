@@ -1,4 +1,27 @@
-var recentCities = [];
+var lastPurchaseOptions = [];
+
+const rowButton =   document.getElementById("new-row");
+
+const columns = 6
+
+function addRow() {
+  const newRow = document.createElement('tr');
+  const lastRow = document.getElementById('last');
+  lastRow.append(newRow);
+  document.getElementById('last').classList.remove('last')
+  newRow.id = "last";
+  function row(columns)
+  for(var i=0; i<=columns; i++) {
+    var x = "<input placeholder='score'/>";
+    var cell = document.createElement('td');
+    cell.innerHTML = x;
+  }
+
+  var newLastRow = document.getElementById('last');
+  newLastRow.append(row)
+
+};
+
 
 renderCities();
 //this saves past searches into local storage
@@ -20,6 +43,9 @@ function renderCities() {
   }
   console.log(pastCities);
 }
+
+rowButton.addEventListener('click', addRow());
+
 
 searchBtn.addEventListener('click', getApi);
 //TODO: fix this so that the selected item is put in the search bar.

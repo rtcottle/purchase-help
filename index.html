@@ -10,7 +10,6 @@
   <body>
     <h1>Purchase Help</h1>
     <main>
-      <>
           <header>
             <h2>Welcome to Purchase Help</h2>
             <p>This app is designed for those that need help narrowing down their best purchase. Can't make a decision? Is one thing better than the other? Can't decide? Well this app is for you. </p>
@@ -43,7 +42,7 @@
                   <td>Car #2 = Honda CRV</td>
                   <td>Car #3 = Ford Escape</td>
                   <td>Car #4 = Mazda CX-5</td>
-                  <td><button>add column</button></td>
+                  <td><button id="new-column">add column</button></td>
                 </tr>
                 <tr>
                   <td>Moonroof</td>
@@ -103,15 +102,7 @@
                   <td><input placeholder="name of item"/></td>
                   <td><input placeholder="name of item"/></td>
                 </tr>
-                <tr>
-                  <td><input placeholder="attribute"/></td>
-                  <td><input placeholder="rank"/></td>
-                  <td><input placeholder="score"/></td>
-                  <td><input placeholder="score"/></td>
-                  <td><input placeholder="score"/></td>
-                  <td><input placeholder="score"/></td>
-                </tr>
-                <tr>
+                <tr id="last">
                   <td><input placeholder="attribute"/></td>
                   <td><input placeholder="rank"/></td>
                   <td><input placeholder="score"/></td>
@@ -121,7 +112,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <button>add row</button>
+                    <button id="new-row">add row</button>
                   </td>
                 </tr>
             </table>
