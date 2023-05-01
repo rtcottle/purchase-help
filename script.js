@@ -10,6 +10,7 @@ function addRow() {
   lastRow.append(newRow);
   document.getElementById('last').classList.remove('last');
   newRow.id = 'last';
+  // TODO: make this function to create multiple elements.
   function row() {
     for (var i = 0; i <= 6; i++) {
       var x = "<input placeholder='score'/>";
