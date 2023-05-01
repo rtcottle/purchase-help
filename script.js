@@ -20,7 +20,7 @@ function addRow() {
   }
 
   var newLastRow = document.getElementById('last');
-  newLastRow.append(row());
+  newLastRow.append(row);
 }
 
 // renderCities();
@@ -44,7 +44,7 @@ function addRow() {
 //   console.log(pastCities);
 // }
 
-rowButton.addEventListener('click', addRow());
+rowButton.addEventListener('click', addRow);
 
 // searchBtn.addEventListener('click', getApi);
 // //TODO: fix this so that the selected item is put in the search bar.
