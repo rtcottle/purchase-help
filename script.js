@@ -7,7 +7,7 @@ function addRow() {
   const newRow = document.createElement('tr');
   const lastRow = document.getElementById('last');
   // TODO: should this be append of append child?
-  lastRow.append(newRow);
+  lastRow.appendChild(newRow);
   document.getElementById('last').classList.remove('last');
   newRow.id = 'last';
   // TODO: make this function to create multiple elements.
@@ -15,6 +15,7 @@ function addRow() {
     for (var i = 0; i <= 6; i++) {
       var x = "<input placeholder='score'/>";
       var cell = document.createElement('td');
+      newRow.appendChild('cell');
       cell.innerHTML = x;
     }
   }
