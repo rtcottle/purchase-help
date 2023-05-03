@@ -11,6 +11,7 @@ function addRow() {
   document.getElementById('last').classList.remove('last');
   newRow.id = 'last';
   // TODO: make this function to create multiple elements.
+  // TODO: make this dynamically add the class name for the columns 1-6.
   function row() {
     for (var i = 0; i <= 6; i++) {
       var x = "<input placeholder='score'/>";

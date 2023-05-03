@@ -1,0 +1,12 @@
+:root {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.title {
+  text-decoration: underline;
+}
+
+.column-1,
+.column-2 {
+  font-weight: 900;
+}
