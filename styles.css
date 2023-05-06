@@ -10,3 +10,10 @@
 .column-2 {
   font-weight: 900;
 }
+
+.total .column-3,
+.total .column-4,
+.total .column-5,
+.total .column-6 {
+  border: 1px solid coral;
+}
