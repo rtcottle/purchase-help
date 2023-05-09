@@ -4,10 +4,11 @@ const rowButton = document.getElementById('new-row');
 
 function addRow() {
   console.log('you clicked the button!!');
+  const table = document.getElementById('purchase-table');
   const newRow = document.createElement('tr');
   const lastRow = document.getElementById('last');
   // TODO: should this be append of append child?
-  lastRow.appendChild(newRow);
+  table.insertBefore(row, lastRow);
   document.getElementById('last').classList.remove('last');
   newRow.id = 'last';
   // TODO: make this function to create multiple elements.
