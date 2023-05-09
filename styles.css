@@ -2,6 +2,10 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+#purchase-table {
+  background: linear-gradient(to right, #bfbfbf, #01dad2);
+}
+
 .title {
   text-decoration: underline;
 }
@@ -15,5 +19,5 @@
 .total .column-4,
 .total .column-5,
 .total .column-6 {
-  border: 1px solid coral;
+  border: 1px solid #ff4d00;
 }
