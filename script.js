@@ -1,6 +1,7 @@
 var lastPurchaseOptions = [];
 
 const rowButton = document.getElementById('new-row');
+const columnButton = document.getElementById('new-column');
 
 function row() {
   for (var i = 0; i <= 6; i++) {
@@ -19,13 +20,18 @@ function addRow(row) {
   const lastRow = document.getElementById('last');
   // TODO: should this be append of append child?
   table.insertBefore(row, lastRow);
-  document.getElementById('last').classList.remove('last');
-  newRow.id = 'last';
+  // document.getElementById('last').classList.remove('last');
+  // newRow.id = 'last';
   // TODO: make this function to create multiple elements.
   // TODO: make this dynamically add the class name for the columns 1-6.
 
   var newLastRow = document.getElementById('last');
   newLastRow.append(row);
+}
+
+function addColumn() {
+  console.log('add column');
+  // more info here
 }
 
 function columnTotals(columns) {
@@ -40,3 +46,4 @@ function columnTotals(columns) {
 }
 
 rowButton.addEventListener('click', addRow);
+columnButton.addEventListener('click', addColumn);
