@@ -29,7 +29,14 @@ function addRow(row) {
 }
 
 function columnTotals(columns) {
-  let arr = [];
+  let result = [];
+  for (let i = 0; i < columns.length; i++) {
+    if (i % 2 == 0 && i < arr.length - 1) {
+      result.push(arr[i] + arr[i + 1]);
+      i++;
+    }
+  }
+  return result;
 }
 
 rowButton.addEventListener('click', addRow);
