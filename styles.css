@@ -1,5 +1,6 @@
 :root {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #purchase-table {
@@ -8,6 +9,15 @@
 
 .title {
   text-decoration: underline;
+  background: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.619),
+    rgba(0, 0, 255, 0.44),
+    rgba(137, 137, 137, 0.644),
+    rgba(0, 128, 0, 0.638)
+  );
+  padding: 2rem;
+  text-align: center;
 }
 
 .column-1,
@@ -19,5 +29,14 @@
 .total .column-4,
 .total .column-5,
 .total .column-6 {
-  border: 1px solid #ff4d00;
+  border: 3px solid #000;
 }
+
+body {
+  border: solid 2px black;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* TODO: make the title bar fixed top */
