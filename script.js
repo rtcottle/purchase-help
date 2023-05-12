@@ -2,6 +2,7 @@ var lastPurchaseOptions = [];
 
 const rowButton = document.getElementById('new-row');
 const columnButton = document.getElementById('new-column');
+const values = document.querySelectorAll('score');
 
 function row() {
   for (var i = 0; i <= 6; i++) {
@@ -29,10 +30,9 @@ function addRow(row) {
   newLastRow.append(row);
 }
 
-function addColumn() {
-  console.log('add column');
-  // more info here
-}
+// function addColumn() {
+//   console.log('add column');
+// }
 
 function columnTotals(columns) {
   let result = [];
@@ -42,8 +42,16 @@ function columnTotals(columns) {
       i++;
     }
   }
+
   return result;
 }
 
+function sumItems() {
+  // COLUMN 1 MULTIPLY ITEMS BY THE NUMBER IN THE RANKING COLUMN
+  // STORE THAT NUMBER IN AN ARRAY FOR THE COLUMN
+  //
+}
+
+values.addEventListener('input', sumItems);
 rowButton.addEventListener('click', addRow);
 columnButton.addEventListener('click', addColumn);
