@@ -47,11 +47,18 @@ function columnTotals(columns) {
 }
 
 function sumItems() {
+  const rank = document.querySelector('rank').value;
+  const score = document.querySelector('column-3').value;
+  const x = [];
+  const multiple = rank * score;
+  const total = x.push(multiple);
+  console.log(total);
   // COLUMN 1 MULTIPLY ITEMS BY THE NUMBER IN THE RANKING COLUMN
   // STORE THAT NUMBER IN AN ARRAY FOR THE COLUMN
-  //
+  // TOTAL THE ARRAY
+  // DISPLAY THE TOTALLED AMOUNT IN THE TOTAL BOX
 }
 
-values.addEventListener('input', sumItems);
-rowButton.addEventListener('click', addRow);
-columnButton.addEventListener('click', addColumn);
+// values.addEventListener('input', sumItems);
+rowButton.addEventListener('click', sumItems);
+// columnButton.addEventListener('click', addColumn);
